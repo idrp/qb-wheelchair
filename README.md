@@ -1,5 +1,5 @@
 # qb-wheelchair
-this is a simple script that allows you to spawn a wheelchair next to use when the item is used
+this is a simple script that allows you to spawn a wheelchair next to you when the item is used
 i simply updated the exports and some other ajustments
 
 # Credits
