@@ -1,4 +1,12 @@
 # qb-wheelchair
-NoPixel inspired wheelchair script for qbcore - i am not the original creator of this script all i did was added a item in the readme and added the new qbcore exports credits to - mojarra#0001 for making the orignal script  Check out there GitHub https://github.com/fishiidev?tab=repositories
+this is a simple script that allows you to spawn a wheelchair next to use when the item is used
+i simply updated the exports and some other ajustments
+
+# Credits
+https://github.com/fishiidev?tab=repositories original Creator of the script
+
 
 Preview: https://streamable.com/50cjzj
+
+qb-core/shared/items.lua
+["wheelchair"] 				     = {["name"] = "wheelchair", 			 	 ["label"] = "wheelchair", 		    ["weight"] = 500, 		["type"] = "item", 		["image"] = "wheelchair.png", 				    ["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Crip Gang"},
