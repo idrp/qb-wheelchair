@@ -4,7 +4,7 @@ local wheelChair = nil
 RegisterNetEvent('wheelchair')
 AddEventHandler('wheelchair', function()
     if not DoesEntityExist(wheelChair) then
-        local wheelChairModel = 'npwheelchair'
+        local wheelChairModel = 'iak_wheelchair'
         RequestModel(wheelChairModel)
         while not HasModelLoaded(wheelChairModel) do
             Citizen.Wait(0)
@@ -17,7 +17,7 @@ AddEventHandler('wheelchair', function()
         local wheelChairPlate = GetVehicleNumberPlateText(wheelChair)
         TriggerEvent("vehiclekeys:client:SetOwner", wheelChairPlate)
         SetVehicleEngineOn(wheelChair, true, true)
-        exports['cdn-fuel']:SetFuel(wheelChair, 100)
+        exports['LegacyFuel']:SetFuel(wheelChair, 100)
     elseif DoesEntityExist(wheelChair) and #(GetEntityCoords(wheelChair) - GetEntityCoords(PlayerPedId())) < 3.0 and GetPedInVehicleSeat(wheelChair,-1) == 0 then
         DeleteVehicle(wheelChair)
         wheelChair = nil
